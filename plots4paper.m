@@ -9,57 +9,57 @@ clear all
 %% -- data_subset options are: 'difficulty_matched', 'distance_matched', 'excitation_matched'
 
 e=0;
-%%% == Experiment 1: Source recognition against level ==
-%%% --- all data
-%e=e+1; exp(e).exp=1; exp(e).subplot='2B'; exp(e).plot_type='level'; exp(e).data_subset='all_data'; exp(e).data_path='exp01_fig2B_2C_2F_3D_6D.csv';
-%%% --- difficulty-matched subset of sources
-%e=e+1; exp(e).exp=1; exp(e).subplot='2C'; exp(e).plot_type='level'; exp(e).data_subset='difficulty_matched'; exp(e).data_path='exp01_fig2B_2C_2F_3D_6D.csv';
-%%% --- distance-matched subset of sources
-%e=e+1; exp(e).exp=1; exp(e).subplot='3D'; exp(e).plot_type='level'; exp(e).data_subset='distance_matched'; exp(e).data_path='exp01_fig2B_2C_2F_3D_6D.csv';
-%%% --- excitation-matched subset of sources
-%e=e+1; exp(e).exp=1; exp(e).subplot='6D'; exp(e).plot_type='level'; exp(e).data_subset='excitation_matched'; exp(e).data_path='exp01_fig2B_2C_2F_3D_6D.csv';
-%
-%%% == Experiment 2: Source recognition against level (multiple choice) ==
-%e=e+1; exp(e).exp=2; exp(e).subplot='2D'; exp(e).plot_type='level'; exp(e).data_subset='all_data'; exp(e).data_path='exp02_fig2D.csv';
-%
-%%% == Experiment 3: Fraction of Exp 1 results judged louder ==
-%e=e+1; exp(e).exp=3; exp(e).subplot='2F'; exp(e).plot_type='level-louder'; exp(e).data_subset='all_data'; exp(e).data_path='exp01_fig2B_2C_2F_3D_6D.csv';
-%
-%%% == Experiment 4: Source recognition in reverberation ==
-%%% --- all data
-%e=e+1; exp(e).exp=4; exp(e).subplot='2J'; exp(e).plot_type='reverb'; exp(e).data_subset='all_data'; exp(e).data_path='exp04_fig2J_2K_2L_3E_5D_6E.csv';
-%%% --- difficulty-matched subset of sources
-%e=e+1; exp(e).exp=4; exp(e).subplot='2K'; exp(e).plot_type='reverb'; exp(e).data_subset='difficulty_matched'; exp(e).data_path='exp04_fig2J_2K_2L_3E_5D_6E.csv';
-%%% --- distance-matched subset of sources
-%e=e+1; exp(e).exp=4; exp(e).subplot='3E'; exp(e).plot_type='reverb'; exp(e).data_subset='distance_matched'; exp(e).data_path='exp04_fig2J_2K_2L_3E_5D_6E.csv';
-%%% --- excitation-matched subset of sources
-%e=e+1; exp(e).exp=4; exp(e).subplot='6E'; exp(e).plot_type='reverb'; exp(e).data_subset='excitation_matched'; exp(e).data_path='exp04_fig2J_2K_2L_3E_5D_6E.csv';
-%%% --- Comparison of indoor vs outdoor sounds: with distance-matched subset of sources
-%e=e+1; exp(e).exp=4; exp(e).subplot='5D'; exp(e).plot_type='reverb-In-vs-Out'; exp(e).data_subset='distance_matched'; exp(e).data_path='exp04_fig2J_2K_2L_3E_5D_6E.csv';
-%
-%%%% == Experiment 5: Source loudness judgments ==
-%e=e+1; exp(e).exp=5; exp(e).subplot='2L'; exp(e).plot_type='reverb-louder'; exp(e).data_subset='all_data'; exp(e).data_path='exp04_fig2J_2K_2L_3E_5D_6E.csv';
-%
-%%% == Experiments 6+7: Source distance judgments ==
-%e=e+1; exp(e).exp=6; exp(e).subplot='3B'; exp(e).plot_type='distance'; exp(e).data_subset='all_data'; exp(e).data_path='exp06_fig3B.csv';
-%e=e+1; exp(e).exp=7; exp(e).subplot='4C'; exp(e).plot_type='distance'; exp(e).data_subset='all_data'; exp(e).data_path='exp07_fig4C.csv';
-%
-%%%% == Experiment 8: Source recognition (studio-recordings) ==
-%%% --- all data
-%e=e+1; exp(e).exp=8; exp(e).subplot='4E'; exp(e).plot_type='reverb'; exp(e).data_subset='all_data'; exp(e).data_path='exp08_fig4E_4F_5D.csv';
-%%% --- distance matched
-%e=e+1; exp(e).exp=8; exp(e).subplot='4E'; exp(e).plot_type='reverb'; exp(e).data_subset='distance_matched'; exp(e).data_path='exp08_fig4E_4F_5D.csv';
-%%% --- distance and difficulty matched
-%e=e+1; exp(e).exp=8; exp(e).subplot='4E'; exp(e).plot_type='reverb'; exp(e).data_subset='distance_and_difficulty_matched'; exp(e).data_path='exp08_fig4E_4F_5D.csv';
-%%% --- Comparison of indoor vs outdoor sounds: with distance-matched subset of sources
-%e=e+1; exp(e).exp=8; exp(e).subplot='5D'; exp(e).plot_type='reverb-In-vs-Out'; exp(e).data_subset='distance_matched'; exp(e).data_path='exp08_fig4E_4F_5D.csv';
-%
-%%%% == Experiment 9: Source loudness judgments (distance-matched studio recordings) ==
-%e=e+1; exp(e).exp=8; exp(e).subplot='4F'; exp(e).plot_type='reverb-louder'; exp(e).data_subset='distance_matched'; exp(e).data_path='exp08_fig4E_4F_5D.csv';
-%
-%%% == Experiments 10+11: Source naturalism judgments ==
-%e=e+1; exp(e).exp=10; exp(e).subplot='5C'; exp(e).plot_type='naturalism'; exp(e).data_subset='distance_matched'; exp(e).data_path='exp10_fig5C.csv';
-%e=e+1; exp(e).exp=11; exp(e).subplot='5C'; exp(e).plot_type='naturalism'; exp(e).data_subset='distance_matched'; exp(e).data_path='exp11_fig5C.csv';
+%% == Experiment 1: Source recognition against level ==
+%% --- all data
+e=e+1; exp(e).exp=1; exp(e).subplot='2B'; exp(e).plot_type='level'; exp(e).data_subset='all_data'; exp(e).data_path='exp01_fig2B_2C_2F_3D_6D.csv';
+%% --- difficulty-matched subset of sources
+e=e+1; exp(e).exp=1; exp(e).subplot='2C'; exp(e).plot_type='level'; exp(e).data_subset='difficulty_matched'; exp(e).data_path='exp01_fig2B_2C_2F_3D_6D.csv';
+%% --- distance-matched subset of sources
+e=e+1; exp(e).exp=1; exp(e).subplot='3D'; exp(e).plot_type='level'; exp(e).data_subset='distance_matched'; exp(e).data_path='exp01_fig2B_2C_2F_3D_6D.csv';
+%% --- excitation-matched subset of sources
+e=e+1; exp(e).exp=1; exp(e).subplot='6D'; exp(e).plot_type='level'; exp(e).data_subset='excitation_matched'; exp(e).data_path='exp01_fig2B_2C_2F_3D_6D.csv';
+
+%% == Experiment 2: Source recognition against level (multiple choice) ==
+e=e+1; exp(e).exp=2; exp(e).subplot='2D'; exp(e).plot_type='level'; exp(e).data_subset='all_data'; exp(e).data_path='exp02_fig2D.csv';
+
+%% == Experiment 3: Fraction of Exp 1 results judged louder ==
+e=e+1; exp(e).exp=3; exp(e).subplot='2F'; exp(e).plot_type='level-louder'; exp(e).data_subset='all_data'; exp(e).data_path='exp01_fig2B_2C_2F_3D_6D.csv';
+
+%% == Experiment 4: Source recognition in reverberation ==
+%% --- all data
+e=e+1; exp(e).exp=4; exp(e).subplot='2J'; exp(e).plot_type='reverb'; exp(e).data_subset='all_data'; exp(e).data_path='exp04_fig2J_2K_2L_3E_5D_6E.csv';
+%% --- difficulty-matched subset of sources
+e=e+1; exp(e).exp=4; exp(e).subplot='2K'; exp(e).plot_type='reverb'; exp(e).data_subset='difficulty_matched'; exp(e).data_path='exp04_fig2J_2K_2L_3E_5D_6E.csv';
+%% --- distance-matched subset of sources
+e=e+1; exp(e).exp=4; exp(e).subplot='3E'; exp(e).plot_type='reverb'; exp(e).data_subset='distance_matched'; exp(e).data_path='exp04_fig2J_2K_2L_3E_5D_6E.csv';
+%% --- excitation-matched subset of sources
+e=e+1; exp(e).exp=4; exp(e).subplot='6E'; exp(e).plot_type='reverb'; exp(e).data_subset='excitation_matched'; exp(e).data_path='exp04_fig2J_2K_2L_3E_5D_6E.csv';
+%% --- Comparison of indoor vs outdoor sounds: with distance-matched subset of sources
+e=e+1; exp(e).exp=4; exp(e).subplot='5D'; exp(e).plot_type='reverb-In-vs-Out'; exp(e).data_subset='distance_matched'; exp(e).data_path='exp04_fig2J_2K_2L_3E_5D_6E.csv';
+
+%%% == Experiment 5: Source loudness judgments ==
+e=e+1; exp(e).exp=5; exp(e).subplot='2L'; exp(e).plot_type='reverb-louder'; exp(e).data_subset='all_data'; exp(e).data_path='exp04_fig2J_2K_2L_3E_5D_6E.csv';
+
+%% == Experiments 6+7: Source distance judgments ==
+e=e+1; exp(e).exp=6; exp(e).subplot='3B'; exp(e).plot_type='distance'; exp(e).data_subset='all_data'; exp(e).data_path='exp06_fig3B.csv';
+e=e+1; exp(e).exp=7; exp(e).subplot='4C'; exp(e).plot_type='distance'; exp(e).data_subset='all_data'; exp(e).data_path='exp07_fig4C.csv';
+
+%%% == Experiment 8: Source recognition (studio-recordings) ==
+%% --- all data
+e=e+1; exp(e).exp=8; exp(e).subplot='4E'; exp(e).plot_type='reverb'; exp(e).data_subset='all_data'; exp(e).data_path='exp08_fig4E_4F_5D.csv';
+%% --- distance matched
+e=e+1; exp(e).exp=8; exp(e).subplot='4E'; exp(e).plot_type='reverb'; exp(e).data_subset='distance_matched'; exp(e).data_path='exp08_fig4E_4F_5D.csv';
+%% --- distance and difficulty matched
+e=e+1; exp(e).exp=8; exp(e).subplot='4E'; exp(e).plot_type='reverb'; exp(e).data_subset='distance_and_difficulty_matched'; exp(e).data_path='exp08_fig4E_4F_5D.csv';
+%% --- Comparison of indoor vs outdoor sounds: with distance-matched subset of sources
+e=e+1; exp(e).exp=8; exp(e).subplot='5D'; exp(e).plot_type='reverb-In-vs-Out'; exp(e).data_subset='distance_matched'; exp(e).data_path='exp08_fig4E_4F_5D.csv';
+
+%%% == Experiment 9: Source loudness judgments (distance-matched studio recordings) ==
+e=e+1; exp(e).exp=8; exp(e).subplot='4F'; exp(e).plot_type='reverb-louder'; exp(e).data_subset='distance_matched'; exp(e).data_path='exp08_fig4E_4F_5D.csv';
+
+%% == Experiments 10+11: Source naturalism judgments ==
+e=e+1; exp(e).exp=10; exp(e).subplot='5C'; exp(e).plot_type='naturalism'; exp(e).data_subset='distance_matched'; exp(e).data_path='exp10_fig5C.csv';
+e=e+1; exp(e).exp=11; exp(e).subplot='5C'; exp(e).plot_type='naturalism'; exp(e).data_subset='distance_matched'; exp(e).data_path='exp11_fig5C.csv';
 
 %% == Experiment 12: Source recognition against level and noise ==
 e=e+1; exp(e).exp=12; exp(e).subplot='7B'; exp(e).plot_type='level-with-noise'; exp(e).data_subset='all_data'; exp(e).data_path='exp12_fig7B.csv';
